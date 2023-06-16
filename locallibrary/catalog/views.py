@@ -33,3 +33,8 @@ class BookListView(generic.ListView):
     
 class BookDetailView(generic.DetailView):
     model = Book
+
+
+class BookListView(generic.ListView):
+    model = Book
+    paginate_by = 10
